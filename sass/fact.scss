@@ -1,0 +1,45 @@
+.fact{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: url("/img/fact/main-fact.png") center no-repeat , linear-gradient(45deg, #31aae2 0%, #9d35c0 100%) ;
+    background-position: 0px 0px;
+    &-blocks{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    &-block{
+        width: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        &_icon{
+            padding: 40px;
+            color: $main-color;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 20px;
+            text-transform: uppercase;
+            padding-bottom: 34px;
+            background: url("/img/fact/cloud-fact.png") center no-repeat;
+        }
+        &_value{
+            padding-bottom: 30px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+        &_info{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+    }
+}

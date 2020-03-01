@@ -1,0 +1,161 @@
+.domain{
+    background: url("../img/domain/domain-fon.png") center no-repeat;
+    padding-top: 120px;
+    padding-bottom: 69px;
+    min-height: 470px;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    &-header{
+        @include header-white ();
+    }
+    &-desc{
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &-form{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        &-checkboxes{
+            padding-top: 35px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            &_check{
+                margin: 35px 40px;
+                &:first-child{
+                    margin-left: 70px;
+                }
+                input{
+                   position: absolute;
+                   z-index: -1;
+                   opacity: 0;
+                   margin: 10px 0 0 20px;
+                   & + label{
+                        transition: .3s;
+                        position: relative;
+                        cursor: pointer;
+                        font-size: 15px;
+                        color: #fff;
+                        font-weight: 400;
+                        line-height: 24px;
+                        &:hover{
+                            color: $main-color;
+                        }
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: -2px;
+                            left: -35px;
+                            width: 18px;
+                            height: 18px;
+                            border: 1px solid #00aeee;
+                            z-index: 5;
+                            box-shadow: 0 2px 5px rgba(0,0,0,.3);
+                            transition: .2s;
+                        }   
+                   }
+                   &:checked + label:after{
+                    background: #00aeee;
+                    transition: .3s;
+                   }
+                   &:active + label:after{
+                    @include blue-shadow();
+                   }
+                }
+            }
+        }
+        &-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        &_text{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            input[type="text"]{
+                border-radius: 30px;
+                border: 1px solid #00aeef;
+                padding: 20px 150px 20px 60px;
+                width: 370px;
+                &:focus{
+                    border: 3px solid #00aeef;
+
+                    transition: .3s;
+                }
+            }
+            .input-search{
+                position: absolute;
+                top: 23px;
+                left: 25px;
+                color: #616161;
+                font-size: 16px;
+            }
+        }
+        &_button{
+            position: relative;
+            input[type="submit"]{
+                position: absolute;
+                left: -140px;
+                top: 8px;
+                padding: 10px 35px 10px 35px;
+                border: none;
+                cursor: pointer;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 24px;
+                text-transform: uppercase;
+                letter-spacing: 0.75px;
+                border-radius: 23px;
+                background-color: #ff666d;
+                background-image: linear-gradient(45deg, #31aae2 0%, #9d35c0 100%);
+                &:hover{
+                    background-image: linear-gradient(45deg, #9d35c0 0%,#31aae2 100%);
+                    transition: opacity 0.5s linear;
+                }
+                &:active{
+                    font-weight: 800;
+                    @include blue-shadow();
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 619px){
+    .domain-form_text {
+        input[type="text"]{
+            width: 100%;
+        }
+    }
+    .domain-form-checkboxes{
+        flex-direction: column;
+        align-items: center;
+        &_check{
+            margin: 15px;
+            &:first-child{
+                margin-left: 25px;
+            }
+        }
+    }
+}		
+
+@media screen and(max-width: 400px){
+    .domain-form_text{
+        flex-wrap: wrap;
+        input[type="text"]{
+            padding: 20px 20px 20px 60px; 
+        }
+    }
+    .domain-form_button{
+        input[type="submit"]{
+            margin-top: 35px;
+            position: static;
+        }
+    }
+}
+		

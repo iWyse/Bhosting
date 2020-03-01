@@ -1,0 +1,166 @@
+.choose{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+    &-header{
+        @include header-black();
+    }
+    &-desc{
+        margin: auto;
+        max-width: 707px;
+        color: #616161;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    &-logo{
+        margin: auto;
+        padding-top: 80px;
+        text-align: left;
+        color: #333;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    &-main{
+        max-width: 570px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        margin: auto;
+        padding-right: 90px;
+        &_price{
+            background: url("../img/slider/cloudprl.png") center no-repeat;
+            margin: 0;
+            padding-top: 30px;
+            margin-right: 50px;
+            width: 130px;
+            height: 95px;
+            .price{
+                padding-top: 20px;
+                color: #fffefe;
+                font-size: 40px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &-offer{
+        margin: 0 auto;
+        &_list{
+            padding-bottom: 20px;
+            list-style-type: none;
+            text-align: left;
+            color: #616161;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 27px;
+            i{
+                padding-right: 10px;
+                color: #d9d9d9;
+                font-size: 13px;
+            }
+        }
+    }
+    &-desc{
+        padding-top: 19px;
+        padding-bottom: 40px;
+        text-align: left;
+        max-width: 572px;
+        color: #616161;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    &-form{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        &_btn{
+            padding: 12px 30px;
+            color: $main-color;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 24px;
+            text-transform: uppercase; 
+            border: 1px solid $main-color;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+    }
+    &-img{
+        padding-top: 20px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1212px){
+    .slider{
+       margin: auto;
+    }
+    .slider-main{
+        margin: auto;
+        padding-right: 0;
+    }
+    .slider-form{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .slider-img{
+        padding-bottom: 40px;
+    }
+    .choose-logo{
+        text-align: center;
+    }
+}
+
+@media (max-width: 639px){
+    .slider-main{
+        padding-right: 0;
+        
+    }
+    .slider-desc{
+        text-align: center;
+    }
+    .slider-main_price{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 369px){
+    .slider-offer{
+        margin: 0;
+    }
+}
+.slider {
+    width: 100%;
+}
+.slick-slide {
+  margin: 0px;
+}
+.slick-slide .content{
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: .5;
+}
+.slick-current {
+  opacity: 1;
+}

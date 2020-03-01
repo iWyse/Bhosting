@@ -1,0 +1,8 @@
+.start {
+  padding-top: 65px; }
+
+.header {
+  min-height: 1000px;
+  background: url("../img/header/mainground.png") no-repeat center, -webkit-linear-gradient(45deg, #31aae2 0%, #9d35c0 100%);
+  background: url("../img/header/mainground.png") no-repeat center, -o-linear-gradient(45deg, #31aae2 0%, #9d35c0 100%);
+  background: url("../img/header/mainground.png") no-repeat center, linear-gradient(45deg, #31aae2 0%, #9d35c0 100%); }

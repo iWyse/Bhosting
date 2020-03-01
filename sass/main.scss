@@ -1,0 +1,50 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "exp.scss";
+@import "domain.scss";
+@import "rate.scss";
+@import "makes.scss";
+@import "choose.scss";
+@import "webbuild.scss";
+@import "tabs.scss";
+@import "fact.scss";
+@import "card.scss";
+@import "faq.scss";
+@import "subscribe.scss";
+@import "sub-slider.scss";
+@import "footer.scss";
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 450px 0 0 450px;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dark{
+    background-color: #1a1a2b;
+}
+.blue{
+    background-color: #00aeef;
+}
+.purple{
+    background-color: #9655c7;
+}
+.green{
+    background-color: #86c724;
+}

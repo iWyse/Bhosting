@@ -1,0 +1,32 @@
+@mixin after_a (){
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    right: -7px;
+    border-radius: 50%;
+    z-index: -2;
+}
+@mixin white-shadow (){
+    box-shadow: 0 0 5px 5px rgba(221, 221, 221, 1);
+}
+@mixin blue-shadow (){
+    box-shadow: 0 0 5px 5px rgba(0, 174, 239, 1);
+}
+@mixin header-black (){
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+@mixin header-white (){
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
