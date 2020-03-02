@@ -16,14 +16,14 @@
     box-shadow: 0 0 5px 5px rgba(0, 174, 239, 1);
 }
 @mixin header-black (){
-    color: #333;
+    color: $dark-grey;
     font-size: 30px;
     font-weight: 700;
     line-height: 25px;
     text-transform: uppercase;
 }
 @mixin header-white (){
-    color: #fff;
+    color: $main-white;
     font-size: 30px;
     font-weight: 700;
     line-height: 25px;

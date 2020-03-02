@@ -12,14 +12,14 @@
         padding-top: 24px;
         padding-bottom: 50px;
         max-width: 140px;
-        color: #8f9095;
+        color: $footer-color;
         font-size: 13px;
         font-weight: 400;
         line-height: 23px;
     }
     &-icons{
         p{
-            color: #fff;
+            color: $main-white;
             padding-bottom: 30px;
         }
         ul{
@@ -44,7 +44,7 @@
             }
                 a{
                     line-height: 3;
-                    color: #fff;
+                    color: $main-white;
                 }
             }
         }
@@ -58,7 +58,7 @@
         &_links{
             li{
                 a{
-                    color: #8f9095;
+                    color: $footer-color;
                     margin-left: 30px;
                 }
             }
@@ -75,16 +75,16 @@
             flex-wrap: wrap;
         }
         ul{
-            color: #fff;
+            color: $main-white;
             margin: 5px;
             li{
                 margin: 15px 0;
-                color: #8f9095;
+                color: $footer-color;
                 font-size: 13px;
                 font-weight: 400;
                 line-height: 30px;
                 &:first-child{
-                    color: #fff;
+                    color: $main-white;
                     font-size: 15px;
                 }
             }
@@ -95,7 +95,7 @@
     margin: 25px auto;
     max-width: 1170px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: $main-white;
     opacity: 0.1;
 }
 
@@ -114,7 +114,7 @@
                 }
                 a{
                     
-                    color: #ffffff;
+                    color: $main-white;
                     font-size: 13px;
                     font-weight: 400;
                     line-height: 25px;

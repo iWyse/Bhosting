@@ -10,7 +10,7 @@
         @include header-white ();
     }
     &-desc{
-        color: #ffffff;
+        color: $main-white;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -39,7 +39,7 @@
                         position: relative;
                         cursor: pointer;
                         font-size: 15px;
-                        color: #fff;
+                        color: $main-white;
                         font-weight: 400;
                         line-height: 24px;
                         &:hover{
@@ -52,14 +52,14 @@
                             left: -35px;
                             width: 18px;
                             height: 18px;
-                            border: 1px solid #00aeee;
+                            border: 1px solid $main-color;
                             z-index: 5;
                             box-shadow: 0 2px 5px rgba(0,0,0,.3);
                             transition: .2s;
                         }   
                    }
                    &:checked + label:after{
-                    background: #00aeee;
+                    background: $main-color;
                     transition: .3s;
                    }
                    &:active + label:after{
@@ -78,11 +78,11 @@
             justify-content: center;
             input[type="text"]{
                 border-radius: 30px;
-                border: 1px solid #00aeef;
+                border: 1px solid $main-color;
                 padding: 20px 150px 20px 60px;
                 width: 370px;
                 &:focus{
-                    border: 3px solid #00aeef;
+                    border: 3px solid $main-color;
 
                     transition: .3s;
                 }
@@ -91,7 +91,7 @@
                 position: absolute;
                 top: 23px;
                 left: 25px;
-                color: #616161;
+                color: $white-grey;
                 font-size: 16px;
             }
         }
@@ -104,7 +104,7 @@
                 padding: 10px 35px 10px 35px;
                 border: none;
                 cursor: pointer;
-                color: #fff;
+                color: $main-white;
                 font-size: 15px;
                 font-weight: 600;
                 line-height: 24px;

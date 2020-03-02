@@ -1,7 +1,7 @@
 .makes{
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #f9f9f9;
+    background-color: $dark-white;
     text-align: center;
     &-header{
         @include header-black();
@@ -9,7 +9,7 @@
     &-desc{
         max-width: 629px;
         margin: auto;
-        color: #333;
+        color: $dark-grey;
         font-size: 15px;
         font-weight: 400;
         line-height: 27px;
@@ -40,7 +40,7 @@
         }
         &_header{
             padding-top: 30px;
-            color: #333;
+            color: $dark-grey;
             font-size: 18px;
             font-weight: 600;
             line-height: 25px;
@@ -49,14 +49,13 @@
         &_desc{
             padding-top: 24px;
             max-width: 252px;
-            color: #333;
+            color: $dark-grey;
             font-size: 15px;
             font-weight: 400;
             line-height: 27px;
         }
     }
 }
-
 @media (max-width: 1157px){
     .makes-block{
         border: none;

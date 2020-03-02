@@ -1,7 +1,7 @@
 .blog{
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #f9f9f9;
+    background-color: $dark-white;
     &-cards{
         display: flex;
         justify-content: space-between;
@@ -11,12 +11,12 @@
     &-card{
         margin: 5px;      
         transition: .3s;
-        background-color: #fff;
+        background-color: $main-white;
         max-width: 370px;
         &:hover{
             box-shadow: 0 0 35px rgba(222, 219, 219, 0.29);
             .date-card{
-                background-color: #00aeef;
+                background-color: $main-color;
                 background-image: linear-gradient(45deg, #31aae2 0%, #9d35c0 100%);
             }
         }
@@ -30,7 +30,7 @@
                 left: 17px;
                 border-radius: 5px;
                 background-color: $main-color;
-                color: #fff;
+                color: $main-white;
                 font-size: 14px;
                 font-weight: 600;
                 line-height: 27px;
@@ -50,7 +50,7 @@
         flex-wrap: wrap;
     }
     &-name{
-        color: #616161;
+        color: $white-grey;
         font-size: 15px;
         font-weight: 400;
         line-height: 30px;
@@ -58,7 +58,7 @@
     }
     &-header{
         max-width: 300px;
-        color: #333;
+        color: $dark-grey;
         font-size: 18px;
         font-weight: 600;
         line-height: 28px;
@@ -73,7 +73,7 @@
     }
     &-desc{
         max-width: 285px;
-        color: #616161;
+        color: $white-grey;
         font-size: 14px;
         font-weight: 400;
         line-height: 27px;
@@ -87,7 +87,7 @@
             a{
                 padding: 10px 15px;
                 border-radius: 2px;
-                background-color: #f9f9f9;
+                background-color: $dark-white;
                 color: $main-color;
                 font-size: 14px;
                 font-weight: 600;
@@ -97,7 +97,7 @@
                 &:hover{
                     background-color: #ff666d;
                     background-image: linear-gradient(45deg, #31aae2 0%, #9d35c0 100%);
-                    color: #fff;
+                    color: $main-white;
                 }
                 &:active{
                     @include  blue-shadow();
@@ -111,14 +111,14 @@
             cursor: pointer;
             padding: 10px;
             border-radius: 2px;
-            background-color: #f9f9f9;
+            background-color: $dark-white;
         }
         &_share{
             cursor: pointer;
             margin-left: 10px;
             padding: 10px 15px;
             border-radius: 2px;
-            background-color: #f9f9f9;
+            background-color: $dark-white;
         }
     }
 }                
